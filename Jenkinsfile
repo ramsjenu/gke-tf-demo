@@ -18,7 +18,7 @@ pipeline {
 
     stage('TF Init') {
       steps {
-        sh 'echo ./creds/serviceaccount.json'
+        sh 'echo /creds/serviceaccount.json'
         container('terraform') {
           sh 'terraform init'
         }
