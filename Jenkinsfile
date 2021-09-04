@@ -19,7 +19,7 @@ pipeline {
 
     stage('TF Init') {
       steps {
-        container('terraform') {
+        container("terraform") {
           sh 'terraform init'
         }
       }      
